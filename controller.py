@@ -87,7 +87,7 @@ class Controller(nn.Module):
         return log_probs[idx], new_state, terminate
 
 
-    def generate_rollout(self, iter_train, iter_dev, verbose=False):
+    def generate_rollout(self, iter_train, iter_dev, verbose=True):
         self.log_probs = []
         self.actions = []
         self.entropies = []
